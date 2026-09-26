@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: atlas-agent-runtime
+Version: 0.1.0
+Summary: Production-oriented runtime and control plane for reliable, secure, observable AI agents.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic<3,>=2
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"
+Requires-Dist: ruff>=0.8; extra == "dev"
+Requires-Dist: mypy>=1.13; extra == "dev"
+
+# ATLAS
+
+## Agent Reliability & Control Plane
+
+ATLAS is an experimental, production-oriented runtime and control plane for executing long-running AI agents with explicit control over tools, state, execution limits, observability, evaluation, security, and human approval.
+
+## Vision
+
+```text
+Agent
+  ↓
+ATLAS Runtime
+  ↓
+Policies / State / Tools / Budgets
+  ↓
+Controlled Execution
+  ↓
+Verification
+  ↓
+Observability
+  ↓
+Evaluation
